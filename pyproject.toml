@@ -1,0 +1,25 @@
+[project]
+name = "ray-tracing-aesthetic-mcp"
+version = "1.0.0"
+description = "MCP server for ray tracing aesthetic parameters extracted from Midjourney Compendium"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp",
+    "pyyaml"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "mypy"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.fastmcp]
+# For FastMCP Cloud deployment
+# Entry point: ray_tracing_aesthetic_mcp/server.py:mcp
